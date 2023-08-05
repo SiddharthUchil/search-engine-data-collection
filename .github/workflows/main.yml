@@ -58,7 +58,7 @@ jobs:
   pull-and-start-app-on-prod:
     needs: build-and-push-ecr-image
     name: Continuous Deployment
-    runs-on: ip-172-31-83-206
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
